@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Box */
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    margin: 50px auto;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    backdrop-filter: blur(6px);
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 10px;
+    color: #ffdd57;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffdd57;
+}
+
+input, select {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Button Styles */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffdd57;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #f1c40f;
+}
+
+/* Result Page */
+.result-box {
+    width: 400px;
+}
+
+.prediction-text {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.approved {
+    color: #00ff99;
+    font-weight: bold;
+}
+
+.not-approved {
+    color: #ff4c4c;
+    font-weight: bold;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background-color: #ffdd57;
+    color: #333;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background-color: #f1c40f;
+}

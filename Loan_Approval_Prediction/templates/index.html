@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Approval Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🏦 Loan Approval Prediction</h1>
+        <p class="subtitle">Enter your details below to check your loan approval status</p>
+        <form action="/predict" method="POST">
+            
+            <label>Gender:</label>
+            <select name="Gender" required>
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+
+            <label>Married:</label>
+            <select name="Married" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <label>Dependents:</label>
+            <input type="number" name="Dependents" min="0" max="3" required>
+
+            <label>Education:</label>
+            <select name="Education" required>
+                <option value="0">Graduate</option>
+                <option value="1">Not Graduate</option>
+            </select>
+
+            <label>Self Employed:</label>
+            <select name="Self_Employed" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <label>Applicant Income:</label>
+            <input type="number" name="ApplicantIncome" required>
+
+            <label>Coapplicant Income:</label>
+            <input type="number" name="CoapplicantIncome" required>
+
+            <label>Loan Amount:</label>
+            <input type="number" name="LoanAmount" required>
+
+            <label>Loan Amount Term (in days):</label>
+            <input type="number" name="Loan_Amount_Term" required>
+
+            <label>Credit History:</label>
+            <select name="Credit_History" required>
+                <option value="0">No Credit History</option>
+                <option value="1">Good Credit History</option>
+            </select>
+
+            <label>Property Area:</label>
+            <select name="Property_Area" required>
+                <option value="0">Rural</option>
+                <option value="1">Semiurban</option>
+                <option value="2">Urban</option>
+            </select>
+
+            <button type="submit">Predict Loan Approval</button>
+        </form>
+    </div>
+</body>
+</html>
